@@ -1,0 +1,1 @@
+../../projects/gspeech-rec/speech-rec.sh

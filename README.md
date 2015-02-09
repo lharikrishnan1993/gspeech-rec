@@ -11,30 +11,29 @@ More interestingly, if you have **parecord** and **timeout** installed on your m
 ### Recognize speech in audio file
     ./speech-rec.sh -i record.flac --rate 16000
 
-### Use another language than en-US (default):
-French
+### Try other languages (default=en-US):
+**French**
 
     ./speech-rec.sh -i record.flac --rate 16000 --language fr-FR
 
-Spanish
+**Spanish**
 
     ./speech-rec.sh -i record.flac -r 16000 -l es-ES
 
 ### Simply say something and get (hopefully) what you've said
     ./speech-rec.sh
    
-### Talk for 7 seconds (default: 3)
+### Talk for 7 seconds (default=3)
     ./speech-rec.sh -d 7
    
-The scripts write audio data into an audio file named **record.flac** and doesn't delete it afterwards so you can listen to what you said.
-To play the audio file type:
+The script writes audio data into an audio file named **record.flac** and doesn't delete it afterwards so you can listen to what you said.
+To play the audio file, type:
 
     paplay record.flac
    
 # Requirements
 ### Google API Key
-The included key is only to be used for test purposes and may be disabled anytime. You should generate your own API key (follow this link:
-http://www.chromium.org/developers/how-tos/api-keys )
+The included key is only to be used for test purposes. It may be disabled by Google anytime. You should generate and use your own API key (follow this link for key generation instructions: http://www.chromium.org/developers/how-tos/api-keys)
 
 #### parecord
 To record and play audio data

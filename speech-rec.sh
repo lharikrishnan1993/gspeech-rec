@@ -101,7 +101,7 @@ FILTERED=`echo "$RESULT" | grep "transcript.*}" | sed 's/,/\n/g;s/[{,},"]//g;s/\
  
 if [[ ! "$FILTERED" ]]
   then
-     >&2 echo "Unable to recognize speech in audio data"
+     >&2 echo "Google was unable to recognize any speech in audio data"
 else
     echo "Recognition result:"
     echo ""
